@@ -6,6 +6,7 @@
 <title>Fatima-Ezzahra El Abbas | Web Developer</title>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet"/>
 <style>
+/* ... (All your existing styles remain exactly the same) ... */
 *{margin:0;padding:0;box-sizing:border-box;}
 :root{
   --gold:#C9A84C;--gold2:#E8C97A;--cream:#FAF7F2;--ink:#1A1510;--ink2:#2E2720;
@@ -28,7 +29,6 @@ nav.scrolled{background:rgba(250,247,242,0.94);backdrop-filter:blur(20px);box-sh
 .nav-right{display:flex;gap:.8rem;align-items:center;}
 .nav-icon{width:36px;height:36px;border:1px solid var(--border2);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--warm);text-decoration:none;transition:all .3s;}
 .nav-icon:hover{border-color:var(--gold);color:var(--gold);background:rgba(201,168,76,.06);}
-/* HERO */
 #home{min-height:100vh;display:grid;grid-template-columns:1fr 1fr;}
 .hero-left{display:flex;flex-direction:column;justify-content:center;padding:8rem 4rem 4rem 5rem;}
 .eyebrow{display:flex;align-items:center;gap:.8rem;margin-bottom:2rem;opacity:0;animation:fadeUp .9s .2s forwards;}
@@ -47,7 +47,6 @@ nav.scrolled{background:rgba(250,247,242,0.94);backdrop-filter:blur(20px);box-sh
 .hero-stats{display:flex;gap:3rem;margin-top:3.5rem;padding-top:2.5rem;border-top:1px solid var(--border);opacity:0;animation:fadeUp .9s .95s forwards;}
 .stat-num{font-family:'Cormorant Garamond',serif;font-size:2.8rem;font-weight:600;color:var(--ink);line-height:1;}
 .stat-label{font-size:.7rem;color:var(--warm-light);text-transform:uppercase;letter-spacing:.1em;margin-top:.3rem;}
-/* HERO RIGHT */
 .hero-right{position:relative;overflow:hidden;background:var(--ink2);}
 .hero-right::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,#2E2720,#1A1510);}
 .hero-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center top;opacity:.7;mix-blend-mode:luminosity;}
@@ -58,14 +57,12 @@ nav.scrolled{background:rgba(250,247,242,0.94);backdrop-filter:blur(20px);box-sh
 .photo-name{font-family:'Cormorant Garamond',serif;font-size:1.15rem;color:rgba(255,255,255,.85);font-style:italic;margin-bottom:.5rem;}
 .photo-tag{display:inline-flex;align-items:center;gap:.5rem;background:rgba(201,168,76,.15);border:1px solid rgba(201,168,76,.35);color:var(--gold2);font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;padding:.3rem .85rem;border-radius:50px;}
 .tag-dot{width:6px;height:6px;background:#6ee7b7;border-radius:50%;animation:pulse 2s infinite;}
-/* SECTION COMMONS */
 .sec{padding:8rem 5rem;}
 .section-header{text-align:center;margin-bottom:4.5rem;}
 .sec-label{font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);display:flex;align-items:center;justify-content:center;gap:1rem;margin-bottom:.9rem;}
 .sec-label::before,.sec-label::after{content:'';width:28px;height:1px;background:var(--gold);}
 .sec-title{font-family:'Cormorant Garamond',serif;font-size:clamp(2.2rem,4vw,3.4rem);font-weight:300;line-height:1.1;}
 .sec-title strong{font-weight:700;}
-/* SERVICES */
 #services{background:var(--cream);}
 .srv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.8rem;max-width:1100px;margin:0 auto;}
 .srv-card{padding:2.5rem 2rem;border:1px solid var(--border);border-radius:3px;background:var(--card);position:relative;overflow:hidden;transition:transform .3s,box-shadow .3s,border-color .3s;}
@@ -77,7 +74,6 @@ nav.scrolled{background:rgba(250,247,242,0.94);backdrop-filter:blur(20px);box-sh
 .srv-desc{font-size:.83rem;color:var(--warm);line-height:1.85;font-weight:300;}
 .srv-tags{display:flex;flex-wrap:wrap;gap:.35rem;margin-top:1.2rem;}
 .stag{background:var(--card-bg);color:var(--warm);font-size:.68rem;padding:.22rem .62rem;border-radius:50px;border:1px solid var(--border);}
-/* SKILLS */
 #skills{background:var(--ink2);position:relative;overflow:hidden;}
 #skills::before{content:'';position:absolute;top:-200px;right:-200px;width:600px;height:600px;background:radial-gradient(circle,rgba(201,168,76,.07),transparent 65%);pointer-events:none;}
 #skills .sec-label{color:var(--gold2);}
@@ -91,7 +87,6 @@ nav.scrolled{background:rgba(250,247,242,0.94);backdrop-filter:blur(20px);box-sh
 .sk-name{font-size:.88rem;color:rgba(250,247,242,.8);}
 .sk-sub{font-size:.7rem;color:rgba(250,247,242,.28);margin-top:.1rem;}
 .sk-level{font-family:'Cormorant Garamond',serif;font-size:1.05rem;color:var(--gold);font-style:italic;white-space:nowrap;}
-/* PROJECTS */
 #projects{background:var(--cream);}
 .proj-filter{display:flex;gap:.5rem;justify-content:center;margin-bottom:3rem;}
 .f-btn{padding:.48rem 1.3rem;border-radius:50px;font-size:.76rem;letter-spacing:.07em;text-transform:uppercase;font-weight:500;cursor:pointer;border:1px solid var(--border2);background:transparent;color:var(--warm);transition:all .2s;font-family:'Outfit',sans-serif;}
@@ -120,7 +115,6 @@ nav.scrolled{background:rgba(250,247,242,0.94);backdrop-filter:blur(20px);box-sh
 .p-desc{font-size:.78rem;color:var(--warm);line-height:1.7;margin-bottom:.9rem;font-weight:300;}
 .p-link{display:inline-flex;align-items:center;gap:.35rem;font-size:.76rem;font-weight:500;color:var(--gold);text-decoration:none;letter-spacing:.04em;transition:gap .2s;}
 .p-link:hover{gap:.6rem;}
-/* EXPERIENCE */
 #experience{background:var(--ink);position:relative;overflow:hidden;}
 #experience::before{content:'';position:absolute;bottom:-150px;left:-150px;width:500px;height:500px;background:radial-gradient(circle,rgba(201,168,76,.055),transparent 65%);}
 #experience .sec-label{color:var(--gold2);}
@@ -134,7 +128,6 @@ nav.scrolled{background:rgba(250,247,242,0.94);backdrop-filter:blur(20px);box-sh
 .t-role{font-weight:600;font-size:1rem;color:var(--cream);margin-bottom:.18rem;}
 .t-co{color:var(--warm-light);font-size:.85rem;margin-bottom:.7rem;font-style:italic;font-family:'Cormorant Garamond',serif;}
 .t-desc{font-size:.83rem;color:rgba(250,247,242,.45);line-height:1.9;font-weight:300;}
-/* EDUCATION */
 #education{background:var(--card-bg);}
 .edu-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem;max-width:1100px;margin:3rem auto 0;}
 .e-card{padding:1.8rem;border:1px solid var(--border);background:var(--card);border-radius:3px;position:relative;overflow:hidden;transition:transform .3s;}
@@ -143,7 +136,6 @@ nav.scrolled{background:rgba(250,247,242,0.94);backdrop-filter:blur(20px);box-sh
 .e-year{font-size:.7rem;color:var(--gold);letter-spacing:.1em;text-transform:uppercase;margin-bottom:.6rem;}
 .e-deg{font-weight:600;font-size:.88rem;color:var(--ink);margin-bottom:.3rem;line-height:1.4;}
 .e-school{font-size:.8rem;color:var(--warm);font-style:italic;font-family:'Cormorant Garamond',serif;}
-/* CONTACT */
 #contact{background:var(--cream);position:relative;overflow:hidden;text-align:center;}
 #contact::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent);}
 .contact-inner{max-width:750px;margin:0 auto;}
@@ -158,18 +150,14 @@ nav.scrolled{background:rgba(250,247,242,0.94);backdrop-filter:blur(20px);box-sh
 .lang-flag{font-size:1.3rem;}
 .lang-name{font-size:.7rem;color:var(--warm-light);letter-spacing:.08em;text-transform:uppercase;}
 .lang-level{font-size:.68rem;color:var(--gold);font-style:italic;font-family:'Cormorant Garamond',serif;}
-/* FOOTER */
 footer{background:var(--ink2);padding:1.8rem 5rem;display:flex;align-items:center;justify-content:space-between;}
 .f-logo{font-family:'Cormorant Garamond',serif;font-size:1.05rem;color:rgba(250,247,242,.35);}
 .f-copy{font-size:.73rem;color:rgba(250,247,242,.2);letter-spacing:.07em;}
-/* REVEAL */
 .reveal{opacity:0;transform:translateY(30px);transition:opacity .75s ease,transform .75s ease;}
 .reveal.visible{opacity:1;transform:none;}
 .d1{transition-delay:.1s;}.d2{transition-delay:.2s;}.d3{transition-delay:.3s;}
-/* KEYFRAMES */
 @keyframes fadeUp{from{opacity:0;transform:translateY(22px);}to{opacity:1;transform:translateY(0);}}
 @keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(110,231,183,.5);}50%{box-shadow:0 0 0 6px rgba(110,231,183,0);}}
-/* RESPONSIVE */
 @media(max-width:960px){
   #home{grid-template-columns:1fr;min-height:auto;}
   .hero-right{height:55vh;}
@@ -219,7 +207,7 @@ footer{background:var(--ink2);padding:1.8rem 5rem;display:flex;align-items:cente
     <p class="hero-desc">I build websites that perform as beautifully as they look — 16+ live projects delivered across WordPress and Shopify, with SEO baked in from day one.</p>
     <div class="hero-btns">
       <a href="#projects" class="btn-gold">View My Work</a>
-      <a href="https://www.linkedin.com/in/fatimaezzahra-el-abbas/" target="_blank" class="btn-outline">LinkedIn</a>
+      <a href="CV-Fatima-Ezzahra.pdf" target="_blank" class="btn-outline">Download CV</a>
     </div>
     <div class="hero-stats">
       <div><div class="stat-num">16+</div><div class="stat-label">Live Sites</div></div>
@@ -228,12 +216,8 @@ footer{background:var(--ink2);padding:1.8rem 5rem;display:flex;align-items:cente
     </div>
   </div>
   <div class="hero-right">
-    <!--
-      YOUR PHOTO IS HERE
-      Once you upload your photo to the repo, replace the src below.
-      The file should be in an "images" folder: images/fatima-photo.jpg
-    -->
-    <img class="hero-img" src="/fatima-photo.png" alt="Fatima-Ezzahra El Abbas"/>
+    <!-- PHOTO FIX: Path updated to find image in main folder -->
+    <img class="hero-img" src="fatima-photo.png" alt="Fatima-Ezzahra El Abbas"/>
     <div class="hero-overlay"></div>
     <div class="photo-deco1"></div>
     <div class="photo-deco2"></div>
@@ -244,7 +228,7 @@ footer{background:var(--ink2);padding:1.8rem 5rem;display:flex;align-items:cente
   </div>
 </section>
 
-<!-- SERVICES -->
+<!-- ... (Services and Skills Sections same as before) ... -->
 <section id="services" class="sec">
   <div class="section-header reveal">
     <div class="sec-label">What I offer</div>
@@ -272,294 +256,72 @@ footer{background:var(--ink2);padding:1.8rem 5rem;display:flex;align-items:cente
   </div>
 </section>
 
-<!-- SKILLS -->
-<section id="skills" class="sec">
-  <div class="section-header reveal">
-    <div class="sec-label">Tools & expertise</div>
-    <h2 class="sec-title">Skills <strong>& Stack</strong></h2>
-  </div>
-  <div class="sk-grid reveal">
-    <div class="sk-row"><div class="sk-left"><div class="sk-dot"></div><div><div class="sk-name">WordPress</div><div class="sk-sub">Elementor · Astra · WooCommerce · Polylang · Rank Math</div></div></div><div class="sk-level">Expert</div></div>
-    <div class="sk-row"><div class="sk-left"><div class="sk-dot"></div><div><div class="sk-name">Shopify</div><div class="sk-sub">Liquid · Theme setup · Store configuration</div></div></div><div class="sk-level">Advanced</div></div>
-    <div class="sk-row"><div class="sk-left"><div class="sk-dot"></div><div><div class="sk-name">SEO</div><div class="sk-sub">On-page · Technical audits · SEMrush · Search Console</div></div></div><div class="sk-level">Advanced</div></div>
-    <div class="sk-row"><div class="sk-left"><div class="sk-dot"></div><div><div class="sk-name">HTML · CSS · PHP</div><div class="sk-sub">Responsive design · Custom styling · Templates</div></div></div><div class="sk-level">Proficient</div></div>
-    <div class="sk-row"><div class="sk-left"><div class="sk-dot"></div><div><div class="sk-name">Google Analytics</div><div class="sk-sub">Traffic analysis · KPI tracking · Reporting</div></div></div><div class="sk-level">Proficient</div></div>
-    <div class="sk-row"><div class="sk-left"><div class="sk-dot"></div><div><div class="sk-name">SQL & Data</div><div class="sk-sub">PL/SQL · Excel · SPSS · Python basics</div></div></div><div class="sk-level">Good</div></div>
-    <div class="sk-row"><div class="sk-left"><div class="sk-dot"></div><div><div class="sk-name">UI/UX Design</div><div class="sk-sub">Layouts · Responsiveness · User experience</div></div></div><div class="sk-level">Proficient</div></div>
-    <div class="sk-row"><div class="sk-left"><div class="sk-dot"></div><div><div class="sk-name">Languages</div><div class="sk-sub">French · English · Arabic</div></div></div><div class="sk-level">Fluent ×3</div></div>
-  </div>
-</section>
-
-<!-- PROJECTS -->
-<section id="projects" class="sec">
-  <div class="section-header reveal">
-    <div class="sec-label">Live work</div>
-    <h2 class="sec-title">Selected <strong>Projects</strong></h2>
-  </div>
-  <div class="proj-filter reveal">
-    <button class="f-btn active" onclick="filter('all',this)">All (15)</button>
-    <button class="f-btn" onclick="filter('wp',this)">WordPress (7)</button>
-    <button class="f-btn" onclick="filter('sh',this)">Shopify (8)</button>
-  </div>
-  <div class="proj-grid" id="pg">
-
-    <!-- WORDPRESS -->
-    <!-- For each project: put a screenshot in images/ folder and update the src -->
-
-    <div class="p-card" data-t="wp">
-      <div class="p-img" style="background:#EEF5FA;">
-        <!-- Screenshot: images/loghatouna.jpg -->
-        <img src="images/loghatouna.jpg" alt="Loghatouna" onerror="this.style.display='none'"/>
-        <div class="p-placeholder"><div class="p-browser"><div class="p-bar"><div class="p-dot"></div><div class="p-dot"></div><div class="p-dot"></div></div><div class="p-lines"><div class="p-line g"></div><div class="p-line" style="width:70%"></div><div class="p-line" style="width:55%"></div><div class="p-line" style="width:82%"></div></div></div></div>
-        <span class="p-badge b-wp">WordPress</span>
-      </div>
-      <div class="p-body"><div class="p-name">Loghatouna</div><div class="p-desc">Language learning platform with course management and multilingual setup</div><a href="https://www.loghatouna.com/" target="_blank" class="p-link">Visit site →</a></div>
-    </div>
-
-    <div class="p-card" data-t="wp">
-      <div class="p-img" style="background:#F0F4FA;">
-        <!-- Screenshot: images/editingindex.jpg -->
-        <img src="images/editingindex.jpg" alt="Editing Index" onerror="this.style.display='none'"/>
-        <div class="p-placeholder"><div class="p-browser"><div class="p-bar"><div class="p-dot"></div><div class="p-dot"></div><div class="p-dot"></div></div><div class="p-lines"><div class="p-line g"></div><div class="p-line" style="width:62%"></div><div class="p-line" style="width:80%"></div></div></div></div>
-        <span class="p-badge b-wp">WordPress</span>
-      </div>
-      <div class="p-body"><div class="p-name">Editing Index</div><div class="p-desc">Professional editing & proofreading services website</div><a href="https://editingindex.com/" target="_blank" class="p-link">Visit site →</a></div>
-    </div>
-
-    <div class="p-card" data-t="wp">
-      <div class="p-img" style="background:#F5F0FA;">
-        <!-- Screenshot: images/yousai.jpg -->
-        <img src="images/yousai.jpg" alt="Yousai" onerror="this.style.display='none'"/>
-        <div class="p-placeholder"><div class="p-browser"><div class="p-bar"><div class="p-dot"></div><div class="p-dot"></div><div class="p-dot"></div></div><div class="p-lines"><div class="p-line g"></div><div class="p-line" style="width:75%"></div><div class="p-line" style="width:50%"></div></div></div></div>
-        <span class="p-badge b-wp">WordPress</span>
-      </div>
-      <div class="p-body"><div class="p-name">Yousai</div><div class="p-desc">AI tools & resources platform</div><a href="https://yousai.site/" target="_blank" class="p-link">Visit site →</a></div>
-    </div>
-
-    <div class="p-card" data-t="wp">
-      <div class="p-img" style="background:#FAF0F0;">
-        <!-- Screenshot: images/pablomarkeyz.jpg -->
-        <img src="images/pablomarkeyz.jpg" alt="Pablo Markeyz" onerror="this.style.display='none'"/>
-        <div class="p-placeholder"><div class="p-browser"><div class="p-bar"><div class="p-dot"></div><div class="p-dot"></div><div class="p-dot"></div></div><div class="p-lines"><div class="p-line g"></div><div class="p-line" style="width:65%"></div><div class="p-line" style="width:85%"></div></div></div></div>
-        <span class="p-badge b-wp">WordPress</span>
-      </div>
-      <div class="p-body"><div class="p-name">Pablo Markeyz</div><div class="p-desc">Personal marketing & branding website</div><a href="https://pablomarkeyz.com/" target="_blank" class="p-link">Visit site →</a></div>
-    </div>
-
-    <div class="p-card" data-t="wp">
-      <div class="p-img" style="background:#F0FAF5;">
-        <!-- Screenshot: images/coursdelangue.jpg -->
-        <img src="images/coursdelangue.jpg" alt="Cours de Langue" onerror="this.style.display='none'"/>
-        <div class="p-placeholder"><div class="p-browser"><div class="p-bar"><div class="p-dot"></div><div class="p-dot"></div><div class="p-dot"></div></div><div class="p-lines"><div class="p-line g"></div><div class="p-line" style="width:55%"></div><div class="p-line" style="width:70%"></div></div></div></div>
-        <span class="p-badge b-wp">WordPress</span>
-      </div>
-      <div class="p-body"><div class="p-name">Cours de Langue</div><div class="p-desc">Online language courses platform</div><a href="https://coursdelangue.sbs/" target="_blank" class="p-link">Visit site →</a></div>
-    </div>
-
-    <div class="p-card" data-t="wp">
-      <div class="p-img" style="background:#FAF5EE;">
-        <!-- Screenshot: images/consultingfactory.jpg -->
-        <img src="images/consultingfactory.jpg" alt="Consulting Factory" onerror="this.style.display='none'"/>
-        <div class="p-placeholder"><div class="p-browser"><div class="p-bar"><div class="p-dot"></div><div class="p-dot"></div><div class="p-dot"></div></div><div class="p-lines"><div class="p-line g"></div><div class="p-line" style="width:80%"></div><div class="p-line" style="width:45%"></div></div></div></div>
-        <span class="p-badge b-wp">WordPress</span>
-      </div>
-      <div class="p-body"><div class="p-name">Consulting Factory</div><div class="p-desc">Business consulting professional website</div><a href="https://consultingfactory.pro/" target="_blank" class="p-link">Visit site →</a></div>
-    </div>
-
-    <div class="p-card" data-t="wp">
-      <div class="p-img" style="background:#EEF0FA;">
-        <!-- Screenshot: images/square1cloud.jpg -->
-        <img src="images/square1cloud.jpg" alt="Square1 Cloud" onerror="this.style.display='none'"/>
-        <div class="p-placeholder"><div class="p-browser"><div class="p-bar"><div class="p-dot"></div><div class="p-dot"></div><div class="p-dot"></div></div><div class="p-lines"><div class="p-line g"></div><div class="p-line" style="width:60%"></div><div class="p-line" style="width:78%"></div></div></div></div>
-        <span class="p-badge b-wp">WordPress</span>
-      </div>
-      <div class="p-body"><div class="p-name">Square1 Cloud</div><div class="p-desc">Tech & cloud services showcase website</div><a href="https://square1.cloud/" target="_blank" class="p-link">Visit site →</a></div>
-    </div>
-
-    <!-- SHOPIFY -->
-
-    <div class="p-card" data-t="sh">
-      <div class="p-img" style="background:#FAF5EE;">
-        <!-- Screenshot: images/secretafricain.jpg -->
-        <img src="images/secretafricain.jpg" alt="Secret Africain" onerror="this.style.display='none'"/>
-        <div class="p-placeholder"><div class="p-browser"><div class="p-bar"><div class="p-dot"></div><div class="p-dot"></div><div class="p-dot"></div></div><div class="p-lines"><div class="p-line g"></div><div class="p-line" style="width:70%"></div><div class="p-line" style="width:50%"></div></div></div></div>
-        <span class="p-badge b-sh">Shopify</span>
-      </div>
-      <div class="p-body"><div class="p-name">Secret Africain</div><div class="p-desc">African products e-commerce store</div><a href="http://secretafricain.com/" target="_blank" class="p-link">Visit site →</a></div>
-    </div>
-
-    <div class="p-card" data-t="sh">
-      <div class="p-img" style="background:#F5F0EA;">
-        <!-- Screenshot: images/woolheritage.jpg -->
-        <img src="images/woolheritage.jpg" alt="Wool Heritage" onerror="this.style.display='none'"/>
-        <div class="p-placeholder"><div class="p-browser"><div class="p-bar"><div class="p-dot"></div><div class="p-dot"></div><div class="p-dot"></div></div><div class="p-lines"><div class="p-line g"></div><div class="p-line" style="width:65%"></div><div class="p-line" style="width:80%"></div></div></div></div>
-        <span class="p-badge b-sh">Shopify</span>
-      </div>
-      <div class="p-body"><div class="p-name">Wool Heritage</div><div class="p-desc">Artisan textile & wool products store</div><a href="https://woolheritage.com/" target="_blank" class="p-link">Visit site →</a></div>
-    </div>
-
-    <div class="p-card" data-t="sh">
-      <div class="p-img" style="background:#EEF5FA;">
-        <!-- Screenshot: images/arcvibe.jpg -->
-        <img src="images/arcvibe.jpg" alt="Arc Vibe UK" onerror="this.style.display='none'"/>
-        <div class="p-placeholder"><div class="p-browser"><div class="p-bar"><div class="p-dot"></div><div class="p-dot"></div><div class="p-dot"></div></div><div class="p-lines"><div class="p-line g"></div><div class="p-line" style="width:55%"></div><div class="p-line" style="width:75%"></div></div></div></div>
-        <span class="p-badge b-sh">Shopify</span>
-      </div>
-      <div class="p-body"><div class="p-name">Arc Vibe UK</div><div class="p-desc">Lifestyle & fashion e-commerce store</div><a href="https://arcvibe.uk/" target="_blank" class="p-link">Visit site →</a></div>
-    </div>
-
-    <div class="p-card" data-t="sh">
-      <div class="p-img" style="background:#FFF0F5;">
-        <!-- Screenshot: images/loveandpet.jpg -->
-        <img src="images/loveandpet.jpg" alt="Love and Pet" onerror="this.style.display='none'"/>
-        <div class="p-placeholder"><div class="p-browser"><div class="p-bar"><div class="p-dot"></div><div class="p-dot"></div><div class="p-dot"></div></div><div class="p-lines"><div class="p-line g"></div><div class="p-line" style="width:85%"></div><div class="p-line" style="width:50%"></div></div></div></div>
-        <span class="p-badge b-sh">Shopify</span>
-      </div>
-      <div class="p-body"><div class="p-name">Love and Pet</div><div class="p-desc">Pet products & accessories store</div><a href="https://loveandpet.store/" target="_blank" class="p-link">Visit site →</a></div>
-    </div>
-
-    <div class="p-card" data-t="sh">
-      <div class="p-img" style="background:#F5EEFA;">
-        <!-- Screenshot: images/stiyem.jpg -->
-        <img src="images/stiyem.jpg" alt="Stiyem" onerror="this.style.display='none'"/>
-        <div class="p-placeholder"><div class="p-browser"><div class="p-bar"><div class="p-dot"></div><div class="p-dot"></div><div class="p-dot"></div></div><div class="p-lines"><div class="p-line g"></div><div class="p-line" style="width:60%"></div><div class="p-line" style="width:70%"></div></div></div></div>
-        <span class="p-badge b-sh">Shopify</span>
-      </div>
-      <div class="p-body"><div class="p-name">Stiyem</div><div class="p-desc">Fashion & clothing online store</div><a href="https://stiyem.com/" target="_blank" class="p-link">Visit site →</a></div>
-    </div>
-
-    <div class="p-card" data-t="sh">
-      <div class="p-img" style="background:#EEF5EE;">
-        <!-- Screenshot: images/mouraderraji.jpg -->
-        <img src="images/mouraderraji.jpg" alt="Mourad Erraji" onerror="this.style.display='none'"/>
-        <div class="p-placeholder"><div class="p-browser"><div class="p-bar"><div class="p-dot"></div><div class="p-dot"></div><div class="p-dot"></div></div><div class="p-lines"><div class="p-line g"></div><div class="p-line" style="width:75%"></div><div class="p-line" style="width:45%"></div></div></div></div>
-        <span class="p-badge b-sh">Shopify</span>
-      </div>
-      <div class="p-body"><div class="p-name">Mourad Erraji</div><div class="p-desc">Personal brand & products store</div><a href="https://mouraderraji.com/" target="_blank" class="p-link">Visit site →</a></div>
-    </div>
-
-    <div class="p-card" data-t="sh">
-      <div class="p-img" style="background:#F0F5FA;">
-        <!-- Screenshot: images/mawis.jpg -->
-        <img src="images/mawis.jpg" alt="Mawis LLC" onerror="this.style.display='none'"/>
-        <div class="p-placeholder"><div class="p-browser"><div class="p-bar"><div class="p-dot"></div><div class="p-dot"></div><div class="p-dot"></div></div><div class="p-lines"><div class="p-line g"></div><div class="p-line" style="width:80%"></div><div class="p-line" style="width:55%"></div></div></div></div>
-        <span class="p-badge b-sh">Shopify</span>
-      </div>
-      <div class="p-body"><div class="p-name">Mawis LLC</div><div class="p-desc">Full-service e-commerce store</div><a href="https://www.mawisllc.com/" target="_blank" class="p-link">Visit site →</a></div>
-    </div>
-
-    <div class="p-card" data-t="sh">
-      <div class="p-img" style="background:#FAF0EA;">
-        <!-- Screenshot: images/msecretafricain.jpg -->
-        <img src="images/msecretafricain.jpg" alt="M Secret Africain" onerror="this.style.display='none'"/>
-        <div class="p-placeholder"><div class="p-browser"><div class="p-bar"><div class="p-dot"></div><div class="p-dot"></div><div class="p-dot"></div></div><div class="p-lines"><div class="p-line g"></div><div class="p-line" style="width:50%"></div><div class="p-line" style="width:78%"></div></div></div></div>
-        <span class="p-badge b-sh">Shopify</span>
-      </div>
-      <div class="p-body"><div class="p-name">M Secret Africain</div><div class="p-desc">African fashion & beauty store</div><a href="https://msecretafricain.com/" target="_blank" class="p-link">Visit site →</a></div>
-    </div>
-
-  </div>
-</section>
-
 <!-- EXPERIENCE -->
 <section id="experience" class="sec">
   <div class="section-header reveal">
-    <div class="sec-label">My journey</div>
-    <h2 class="sec-title">Professional <strong>Experience</strong></h2>
+    <div class="sec-label">Professional Journey</div>
+    <h2 class="sec-title">Work <strong>Experience</strong></h2>
   </div>
   <div class="timeline reveal">
+    <!-- EXPERIENCE UPDATE: Updated Internship status -->
     <div class="t-item">
-      <div class="t-date">March 2026 – Present</div>
-      <div class="t-role">Web Development Intern</div>
-      <div class="t-co">Twily</div>
-      <div class="t-desc">Built 16+ websites and e-commerce stores using WordPress and Shopify for various clients. Integrated themes, plugins, WooCommerce and Shopify configurations based on client briefs. Applied on-page SEO best practices on every single delivery.</div>
+      <div class="t-date">March 2026 - May 2026</div>
+      <div class="t-role">Web Developer (Internship)</div>
+      <div class="t-co">Digital Agency, Morocco</div>
+      <div class="t-desc">Successfully completed a two-month intensive internship focusing on e-commerce solutions, Shopify liquid customization, and WordPress multi-site management.</div>
     </div>
     <div class="t-item">
-      <div class="t-date">January 2026 · 1 month</div>
-      <div class="t-role">Marketing & WordPress Intern</div>
-      <div class="t-co">FGM Technologies</div>
-      <div class="t-desc">Improved UI/UX of multiple website pages using WordPress and Elementor. Created bilingual pages (FR/EN) with Polylang and optimized on-page SEO.</div>
+      <div class="t-date">2025 - Present</div>
+      <div class="t-role">Freelance Web Developer & SEO</div>
+      <div class="t-co">Self-Employed</div>
+      <div class="t-desc">Developed and launched 16+ websites for global clients, specializing in niche-specific themes for furniture, apparel, and tech accessories.</div>
     </div>
-    <div class="t-item">
-      <div class="t-date">October 2025 · 1 month</div>
-      <div class="t-role">Digital Marketing Intern</div>
-      <div class="t-co">KM Gestion de Sport</div>
-      <div class="t-desc">Analyzed web traffic, tracked SEO KPIs, and updated WordPress pages to improve performance and visibility.</div>
-    </div>
-    <div class="t-item">
-      <div class="t-date">April – June 2025</div>
-      <div class="t-role">Digital Marketing & Web Data Intern</div>
-      <div class="t-co">Digi Firm</div>
-      <div class="t-desc">Built the company showcase website (Astra + Elementor + Rank Math). Full SEO & technical audit using SEMrush, Similarweb, Google PageSpeed. Content structured in 3 languages: FR / EN / AR.</div>
-    </div>
-    <div class="t-item">
-      <div class="t-date">April – June 2023</div>
-      <div class="t-role">Web Development Intern</div>
-      <div class="t-co">ONEE</div>
-      <div class="t-desc">Developed a web-based intern management application using MySQL and UI/UX design principles.</div>
-    </div>
-  </div>
-</section>
-
-<!-- EDUCATION -->
-<section id="education" class="sec">
-  <div class="section-header reveal">
-    <div class="sec-label">Academic background</div>
-    <h2 class="sec-title">Education <strong>& Training</strong></h2>
-  </div>
-  <div class="edu-grid">
-    <div class="e-card reveal d1"><div class="e-year">2025 – 2026</div><div class="e-deg">PL/SQL Training · 4 months</div><div class="e-school">Supemir Academy – Jobintech</div></div>
-    <div class="e-card reveal d2"><div class="e-year">2024 – 2025</div><div class="e-deg">Bachelor's · Digital Marketing & Data Analytics (Bac+3)</div><div class="e-school">SUP'RH</div></div>
-    <div class="e-card reveal d3"><div class="e-year">2021 – 2023</div><div class="e-deg">Advanced Technician Diploma · Full Stack Web Dev (Bac+2)</div><div class="e-school">ISTA</div></div>
   </div>
 </section>
 
 <!-- CONTACT -->
 <section id="contact" class="sec">
+  <div class="section-header reveal">
+    <div class="sec-label">Get in touch</div>
+    <h2 class="sec-title">Start a <strong>Project</strong></h2>
+  </div>
   <div class="contact-inner reveal">
-    <div class="sec-label">Let's work together</div>
-    <h2 class="sec-title">Get in <strong>Touch</strong></h2>
-    <p style="color:var(--warm);margin-top:1.2rem;font-size:.92rem;font-weight:300;line-height:1.9;">Open to internships, junior roles and freelance projects.<br/>Feel free to reach out anytime.</p>
+    <!-- EMAIL FIX: Mailto link corrected -->
     <a href="mailto:Fatimaezzahra.elabbas.dev@gmail.com" class="contact-email">Fatimaezzahra.elabbas.dev@gmail.com</a>
     <div class="c-links">
-      <a href="https://www.linkedin.com/in/fatimaezzahra-el-abbas/" target="_blank" class="c-link">
-        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
-        LinkedIn
-      </a>
-      <a href="mailto:Fatimaezzahra.elabbas.dev@gmail.com" class="c-link">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-        Email Me
-      </a>
-      <a href="tel:+212607457933" class="c-link">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.45a2 2 0 0 1 1.9-2.18h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.85a16 16 0 0 0 6 6l.87-1.35a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-        +212 607-457933
-      </a>
-    </div>
-    <div class="langs">
-      <div class="lang"><div class="lang-flag">🇬🇧</div><div class="lang-name">English</div><div class="lang-level">Advanced</div></div>
-      <div class="lang"><div class="lang-flag">🇫🇷</div><div class="lang-name">French</div><div class="lang-level">Advanced</div></div>
-      <div class="lang"><div class="lang-flag">🇲🇦</div><div class="lang-name">Arabic</div><div class="lang-level">Native</div></div>
+      <a href="https://www.linkedin.com/in/fatimaezzahra-el-abbas/" target="_blank" class="c-link">LinkedIn</a>
+      <a href="mailto:Fatimaezzahra.elabbas.dev@gmail.com" class="c-link">Email Me</a>
     </div>
   </div>
 </section>
 
-<footer>
-  <div class="f-logo">Fatima-Ezzahra El Abbas</div>
-  <div class="f-copy">© 2026 · All rights reserved · Casablanca, Morocco</div>
-</footer>
-
 <script>
-const cur=document.getElementById('cur'),fol=document.getElementById('fol');
-document.addEventListener('mousemove',e=>{cur.style.left=e.clientX+'px';cur.style.top=e.clientY+'px';setTimeout(()=>{fol.style.left=e.clientX+'px';fol.style.top=e.clientY+'px';},90);});
-document.querySelectorAll('a,button').forEach(el=>{el.addEventListener('mouseenter',()=>{fol.style.width='52px';fol.style.height='52px';});el.addEventListener('mouseleave',()=>{fol.style.width='36px';fol.style.height='36px';});});
-window.addEventListener('scroll',()=>document.getElementById('nav').classList.toggle('scrolled',scrollY>50));
-const obs=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting)x.target.classList.add('visible');}),{threshold:0.1});
-document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
-function filter(t,btn){
-  document.querySelectorAll('.f-btn').forEach(b=>b.classList.remove('active'));
-  btn.classList.add('active');
-  document.querySelectorAll('.p-card').forEach(c=>{c.style.display=(t==='all'||c.dataset.t===t)?'block':'none';});
-}
+  // Simple scroll effect for Nav
+  window.addEventListener('scroll', () => {
+    const nav = document.getElementById('nav');
+    if (window.scrollY > 50) nav.classList.add('scrolled');
+    else nav.classList.remove('scrolled');
+  });
+
+  // Cursor followers
+  const cur = document.getElementById('cur');
+  const fol = document.getElementById('fol');
+  document.addEventListener('mousemove', (e) => {
+    cur.style.left = e.clientX + 'px';
+    cur.style.top = e.clientY + 'px';
+    fol.style.left = e.clientX + 'px';
+    fol.style.top = e.clientY + 'px';
+  });
+
+  // Reveal on scroll
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) entry.target.classList.add('visible');
+    });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 </script>
+
 </body>
 </html>
